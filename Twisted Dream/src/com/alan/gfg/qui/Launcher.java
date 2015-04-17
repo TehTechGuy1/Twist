@@ -23,6 +23,7 @@ import com.alan.gfg.Game;
 import com.alan.gfg.RunGame;
 import com.alan.gfg.graphics.Screen;
 import com.alan.gfg.input.Mouse;
+import com.alan.gfg.utils.Updater;
 
 public class Launcher extends Canvas implements Runnable{
 	
@@ -62,6 +63,8 @@ public class Launcher extends Canvas implements Runnable{
 		
 		if(id == 0){
 		drawButtons();
+		Updater.checkForUpdate(false);
+	//	System.out.println("TEST");
 		}
 		
 		Mouse mouse = new Mouse();
